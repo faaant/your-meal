@@ -1,0 +1,7 @@
+mutation RemoveDishFromBookmark($id: uuid!) {
+  delete_user_dishes_by_pk(id: $id) {
+    dish {
+      name
+    }
+  }
+}

@@ -1,0 +1,7 @@
+#import "../../fragments/user/UserFragment.graphql"
+
+mutation UpdateUserInfo($id: uuid!, $username: String!) {
+  user: update_user_by_pk(pk_columns: {id: $id}, _set: {username: $username}) {
+    ...UserFragment
+  }
+}

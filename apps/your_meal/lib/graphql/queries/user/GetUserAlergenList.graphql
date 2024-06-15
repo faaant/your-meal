@@ -1,0 +1,9 @@
+query GetUserAlergenList($userId: uuid!) {
+  user_alergens(where: {user_id: {_eq: $userId}}) {
+    id
+    ingredient {
+      id
+      name
+    }
+  }
+}

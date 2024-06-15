@@ -1,0 +1,18 @@
+fragment DishFragment on dish {
+  created_by
+  details
+  dish_ingredients {
+    amount
+    id
+    ingredient {
+    id
+    name
+    }
+    measurement_entity
+    type
+  }
+  id
+  is_published
+  name
+  photo_url
+}

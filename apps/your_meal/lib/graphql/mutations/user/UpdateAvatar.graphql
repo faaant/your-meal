@@ -1,0 +1,10 @@
+mutation UpdateUserAvatar($id: uuid, $avatarUrl: String) {
+  update_user(where: {id: {_eq: $id}}, _set: {photo_url: $avatarUrl}) {
+    returning {
+      id
+      photo_url
+      email
+      username
+    }
+  }
+}

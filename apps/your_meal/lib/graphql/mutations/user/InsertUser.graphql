@@ -1,0 +1,7 @@
+#import "../../fragments/user/UserFragment.graphql"
+
+mutation InsertUser($email: String!, $photo_url: String!, $username: String!) {
+  user: insert_user_one(object: {email: $email, photo_url: $photo_url, username: $username}) {
+    ...UserFragment
+  }
+}

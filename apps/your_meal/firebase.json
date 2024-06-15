@@ -1,0 +1,30 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "your-meal-app",
+                    "appId": "1:687336498524:android:a2427fac4b21f4a5a9cd99",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "ios": {
+                "default": {
+                    "projectId": "your-meal-app",
+                    "appId": "1:687336498524:ios:1183011f6c1c1810a9cd99",
+                    "uploadDebugSymbols": false,
+                    "fileOutput": "ios/Runner/GoogleService-Info.plist"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "your-meal-app",
+                    "configurations": {
+                        "android": "1:687336498524:android:a2427fac4b21f4a5a9cd99",
+                        "ios": "1:687336498524:ios:1183011f6c1c1810a9cd99"
+                    }
+                }
+            }
+        }
+    }
+}

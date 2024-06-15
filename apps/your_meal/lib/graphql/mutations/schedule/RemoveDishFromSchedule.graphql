@@ -1,0 +1,7 @@
+mutation RemoveDishFromSchedule($scheduleId: uuid!) {
+  delete_schedule_by_pk(id: $scheduleId) {
+    dish {
+      name
+    }
+  }
+}

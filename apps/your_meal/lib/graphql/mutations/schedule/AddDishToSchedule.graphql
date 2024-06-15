@@ -1,0 +1,7 @@
+mutation AddDishToSchedule($day: String!, $dishId: uuid!, $userId: uuid!, $weekNumber: Int = 1) {
+  insert_schedule_one(object: {day: $day, dish_id: $dishId, user_id: $userId, week_number: $weekNumber}) {
+    dish {
+      name
+    }
+  }
+}

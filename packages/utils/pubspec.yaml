@@ -1,0 +1,16 @@
+name: utils
+description: Common utils used in app
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.3.3 <4.0.0"
+  flutter: ">=3.0.0 <4.0.0"
+
+dependencies:
+  fpdart: ^1.1.0
+  flutter:
+    sdk: flutter
+  image_picker: ^1.1.1
+  collection: ^1.18.0
+  firebase_storage: ^11.7.6

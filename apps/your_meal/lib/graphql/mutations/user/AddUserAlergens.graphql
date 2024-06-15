@@ -1,0 +1,5 @@
+mutation AddUserAlergens($alergens: [user_alergens_insert_input!]!) {
+  insert_user_alergens(objects: $alergens) {
+    affected_rows
+  }
+}

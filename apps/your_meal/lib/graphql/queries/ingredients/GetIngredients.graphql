@@ -1,0 +1,7 @@
+query GetIngredients {
+  ingredients {
+    id
+    name
+    photo_url
+  }
+}

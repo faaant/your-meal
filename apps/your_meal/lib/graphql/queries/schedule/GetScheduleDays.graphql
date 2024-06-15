@@ -1,0 +1,13 @@
+#import "../../fragments/dishes/DishFragment.graphql"
+
+query GetScheduleDays($userId: uuid!) {
+  schedule(where: {user_id: {_eq: $userId}}) {
+    day
+    week_number
+    id
+		dish {
+      ...DishFragment
+    }
+  }
+}
+

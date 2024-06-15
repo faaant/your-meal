@@ -1,0 +1,7 @@
+mutation AddDishToBookmark($dishId: uuid!, $userId: uuid!) {
+  insert_user_dishes_one(object: {dish_id: $dishId, user_id: $userId}) {
+    dish {
+      name
+    }
+  }
+}

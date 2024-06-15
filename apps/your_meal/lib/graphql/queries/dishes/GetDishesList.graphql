@@ -1,0 +1,13 @@
+#import "../../fragments/dishes/DishFragment.graphql"
+
+query GetDishesList($userId: uuid!) {
+  dish (where: {is_published: {_eq: true}}) {
+    ...DishFragment
+  }
+  user_dishes(where: {user_id: {_eq: $userId}}) {
+    id
+    dish {
+      ...DishFragment
+    }
+  }
+}

@@ -1,0 +1,5 @@
+mutation CreateDish($created_by: uuid!, $details: String!, $name: String!, $photo_url: String!, $dish_ingredients: dish_ingredients_arr_rel_insert_input) {
+  insert_dish_one(object: {created_by: $created_by, details: $details, name: $name, photo_url: $photo_url, dish_ingredients: $dish_ingredients, user_dishes: {data: {user_id: $created_by}}}) {
+    name
+  }
+}

@@ -1,0 +1,7 @@
+#import "../../fragments/user/UserFragment.graphql"
+
+query GetUser($email: String!) {
+  user(where: {email: {_eq: $email}}) {
+    ...UserFragment
+  }
+}
